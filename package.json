@@ -4,7 +4,7 @@
   "description": "Format numbers, bytes, dates, durations, and lists into human-readable strings. Zero dependencies.",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js && node test-bytes.js"
   },
   "keywords": ["humanize", "format", "bytes", "duration", "timeago", "number", "compact", "ordinal", "pluralize", "truncate"],
   "author": "Adam Chraibi <adamchraibi@yahoo.com>",

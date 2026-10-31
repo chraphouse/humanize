@@ -18,7 +18,7 @@ function bytes(value, options = {}) {
     ? ['B', 'KiB', 'MiB', 'GiB', 'TiB', 'PiB']
     : ['B', 'KB', 'MB', 'GB', 'TB', 'PB'];
   const i = Math.floor(Math.log(Math.abs(value)) / Math.log(k));
-  const idx = Math.min(i, units.length - 1);
+  const idx = Math.max(0, Math.min(i, units.length - 1));
   return (value / Math.pow(k, idx)).toFixed(decimals) + ' ' + units[idx];
 }
 
